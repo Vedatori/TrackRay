@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TrackRay_Library)(type KiCad)(uri ${KIPRJMOD}/TrackRay_Library/TrackRay_Library.pretty)(options "")(descr ""))
+)

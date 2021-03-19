@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+<title>CamControl</title>
+<style>
+.stream {
+    transform: rotate(0.25turn);
+    height:50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+    <img id="stream" class="stream" src="">
+<script>
+const view = document.getElementById('stream');
+const WS_URL = "ws://" + window.location.host + ":82";
+const ws = new WebSocket(WS_URL);
+		
+ws.onmessage = message => {
+	if (message.data instanceof Blob) {
+	  var urlObject = URL.createObjectURL(message.data);
+	  view.src = urlObject;
+	}
+};
+</script>
+</body>
+</html>
