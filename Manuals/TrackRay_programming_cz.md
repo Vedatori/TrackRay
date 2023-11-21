@@ -96,8 +96,8 @@ ___
 Vytvoříme nový projekt a nahrajeme program do TrackRay.
 
 1. Vytvoř si na disku svého PC složku pro tvé budoucí programy, například *C:/Vedatori/TrackRay-moje-programy*.
-1. Do této nové složky překopíruj složku *TRACKRAY-PROJECT-TEMPLATE* ze sbírky příkladů *TrackRay-examples-master*. Tato složka *TRACKRAY-PROJECT-TEMPLATE* bude sloužit jako šablona tvých budoucích programů pro TrackRay. 
-1. Překopírovanou složku *TRACKRAY-PROJECT-TEMPLATE* přejmenuj na *01_prvni_program*.
+1. Do této nové složky překopíruj složku *demo_project* ze sbírky příkladů *TrackRay-examples-master*. Tato složka *demo_project* bude sloužit jako šablona tvých budoucích programů pro TrackRay. 
+1. Překopírovanou složku *demo_project* přejmenuj na *01_prvni_program*.
 1. Ve VS Code otevři složku *01_prvni_program* pomocí *File*->*Open folder*.
 1. Připojte TrackRay pomocí USB Mini B kabelu k PC.
 1. V dolní liště PlatformIO stiskněte šipku a tím nahrejte program do TrackRay.
@@ -107,9 +107,7 @@ Vytvoříme nový projekt a nahrajeme program do TrackRay.
 
 ___
 ## <a name = prvniProgram>První program</a>
-Rozebereme si každý řádek šablony a napíšeme náš první program.
-
-Zde je celý program šablony:
+Otevři si soubor *main.cpp*. Programovat robota budeme hlavně v tomto souboru. Nahraď celý jeho obsah následujícím minimálním kódem:
 ```
 #include "TrackRay/TrackRay.h"
 
@@ -128,7 +126,7 @@ void loop() {
 1. `trrBegin();`
 1. `void loop()` - Tato funkce se jmenuje *loop* a je spouštěna stále pořád dokola dokud je TrackRay zapnutý.
 
-###Tvůj kód
+### Tvůj kód
 Nyní napíšeš svůj první vlastní program na TrackRay. Na příslušné místo v tvém kódu přepiš řádek `trrSetLedDigital(D1, true);`. Tento řádek patří na konec funkce *setup*, tedy před uzavírací závorku }.
 
 Všimni si, že při psaní ti VS Code napovídá. Stačí napsat *trr* a uvidíš všechny metody, které můžeš používat na řízení TrackRay. Pokud se tak nestane, nabídku vyvoláš stisknutím *Ctrl + Space*.

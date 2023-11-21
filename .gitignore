@@ -1,28 +1,36 @@
-# Created by https://www.gitignore.io/api/platformio
-# Edit at https://www.gitignore.io/?templates=platformio
-
-### PlatformIO ###
-.pioenvs
-.piolibdeps
-.clang_complete
-.gcc-flags.json
-
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-
-
-# End of https://www.gitignore.io/api/platformio
-.ipch
-.bin
-.vscode/launch.json
-.vscode/settings.json
-
+### PlatformIO ###
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
 .pio
+
+### Kicad ###
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+### MacOS ###
+*.DS_Store
+.uploadfs_sha1
